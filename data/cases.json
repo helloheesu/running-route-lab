@@ -1,0 +1,5 @@
+[
+  {"id":"postech-5k","name":"POSTECH 주변","point":[36.0135,129.325],"distance":5000,"avoidSteps":true,"terrain":true},
+  {"id":"forest-3k","name":"철길숲 주변","point":[36.021,129.337],"distance":3000,"avoidSteps":true,"terrain":true},
+  {"id":"postech-no-terrain","name":"고도 자료 실패","point":[36.0135,129.325],"distance":5000,"avoidSteps":true,"terrain":false}
+]

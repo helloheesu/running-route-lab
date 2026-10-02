@@ -1,0 +1,16 @@
+{
+  "version": "public-v1",
+  "elementFields": [
+    "user",
+    "uid",
+    "timestamp",
+    "changeset",
+    "version"
+  ],
+  "tagFields": [
+    "phone",
+    "contact:phone",
+    "email",
+    "contact:email"
+  ]
+}

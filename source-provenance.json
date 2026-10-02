@@ -1,0 +1,40 @@
+{
+  "source": "Running-route algorithm exploration prototype",
+  "copiedAt": "2026-09-30",
+  "files": [
+    {
+      "file": "routing.js",
+      "sha256": "99577a1f244851f8edf9abd2ef8f21f935c3352bb250db398a2225aa19e8314c"
+    },
+    {
+      "file": "route-evidence.js",
+      "sha256": "74d1f5429f225b4a0fb7a8a16a00ce6af4cbe4cf2b05e23626abc8654ed2b485"
+    },
+    {
+      "file": "elevation.js",
+      "sha256": "df8bdc6d570a96dab646669bab2e333419447534a40d8784fdeb7f5bb1e692e4"
+    },
+    {
+      "file": "route-comparison.js",
+      "sha256": "2363309c0933f44a75e30ebc1a9695ac6a7baaa78b0507670b8d0d594bea9349"
+    },
+    {
+      "file": "route-clustering.js",
+      "sha256": "8d62cd53e66f1944eb9c752b98426b269145c8ed3a14e4bed2eda2753da85386"
+    },
+    {
+      "file": "nearby-starts.js",
+      "sha256": "19da2aeb42d2258f2d8663c16384384f73d3e5560c9f445029a878df660b6b69"
+    },
+    {
+      "file": "places.js",
+      "sha256": "54697163d64e388cf628eadf74032b7b345c0511e95dc06510580f596d13a705"
+    },
+    {
+      "file": "guide.js",
+      "sha256": "ff0de2a2a294fa23a0fc1dbd8f2db6bbc5121fbd31e4a875c6379883a47ca835"
+    }
+  ],
+  "note": "Existing engine copied without edits. New recommendations are a separate layer.",
+  "sourceSnapshot": "83539fda7b725406b5c40ae737a97ffe860e7d4c"
+}

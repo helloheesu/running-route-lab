@@ -50,13 +50,17 @@ npm run data:check
 
 `npm run build`는 `dist/client/`를 만듭니다. 업로드·배포·기존 서비스 변경은 하지 않습니다. 코드의 새 공개 라이선스는 정하지 않았으며, 데이터·의존성·기기 자산의 출처와 조건은 [출처 문서](data/ATTRIBUTION.md)에 구분했습니다.
 
-## GitHub에 올릴 때
+## GitHub에서 받기
 
-이 저장소는 새 이력으로 시작했고 원격 저장소는 아직 연결하지 않았습니다. GitHub에서 저장소를 준비한 뒤 아래의 URL을 실제 주소로 바꾸어 사용합니다. 공개 여부와 코드 라이선스는 소유자가 결정합니다.
+공개 저장소: https://github.com/helloheesu/running-route-lab
 
 ```sh
-git remote add origin <GITHUB_REPOSITORY_URL>
-git push -u origin main
+git clone https://github.com/helloheesu/running-route-lab.git
+cd running-route-lab
+npm ci
+npm test
+npm run build
+npm run dev -- --host 127.0.0.1 --port 4190 --strictPort
 ```
 
 작업 폴더 전체를 웹 업로드하거나 압축하지 마세요. 준비된 지도와 캐시가 로컬에는 있어도 Git에는 제외되어 있습니다. 소스 파일만 별도 압축해야 한다면 `git archive --format=zip --output=work/running-route-lab-source.zip HEAD`를 사용합니다. 이 ZIP은 Git 이력 없이 추적 파일만 담습니다.

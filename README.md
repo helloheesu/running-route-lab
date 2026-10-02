@@ -4,9 +4,11 @@
 
 ## 빠른 실행
 
-Node **24.x**, npm, Git이 필요합니다. 모든 명령은 저장소 루트에서 실행합니다.
+Node **24.x**, npm, Git이 필요합니다. 저장소를 복제한 뒤 아래 순서로 실행합니다.
 
 ```sh
+git clone https://github.com/helloheesu/running-route-lab.git
+cd running-route-lab
 npm ci
 npm test
 npm run build
@@ -28,7 +30,7 @@ npm run dev -- --host 127.0.0.1 --port 4190 --strictPort
 - `data/`: 공통 정리 규칙, 고정된 광역 자료 원본 목록/해시, 출처, 실험 입력.
 - `scripts/`, `tests/`: 선택 데이터 준비, 검사, 재현 실험, 자동 테스트.
 
-광역 지도 약 141MB와 기존 Git 이력은 포함하지 않았습니다. 샘플 범위 밖에서 계산하려면:
+광역 지도는 저장소에 포함하지 않으며 선택적으로 내려받습니다. 샘플 범위 밖에서 계산하려면:
 
 ```sh
 npm run data:regions
@@ -39,8 +41,8 @@ npm run data:check
 
 ## 읽는 순서
 
-1. AI 실행·작업 지침: [AGENTS.md](AGENTS.md)
-2. 설치·실행·문제 해결: [실행 가이드](docs/SETUP.md)
+1. 설치·실행·문제 해결: [실행 가이드](docs/SETUP.md)
+2. AI와 함께 코드 수정: [AGENTS.md](AGENTS.md)
 3. 정보원과 한계: [조사 지식](docs/RESEARCH.md)
 4. 합의한 조건과 실험 설정: [제품 정책](docs/POLICY.md)
 5. 참고 구현: [알고리즘 설명](docs/ALGORITHM.md)
@@ -48,19 +50,4 @@ npm run data:check
 7. 대용량 자료 복원·생성: [데이터 가이드](docs/DATA.md)
 8. 공개 정리 범위와 실제 검증: [공개 검토](PUBLIC-RELEASE-REVIEW.md), [검증 기록](docs/VALIDATION.md)
 
-`npm run build`는 `dist/client/`를 만듭니다. 업로드·배포·기존 서비스 변경은 하지 않습니다. 코드의 새 공개 라이선스는 정하지 않았으며, 데이터·의존성·기기 자산의 출처와 조건은 [출처 문서](data/ATTRIBUTION.md)에 구분했습니다.
-
-## GitHub에서 받기
-
-공개 저장소: https://github.com/helloheesu/running-route-lab
-
-```sh
-git clone https://github.com/helloheesu/running-route-lab.git
-cd running-route-lab
-npm ci
-npm test
-npm run build
-npm run dev -- --host 127.0.0.1 --port 4190 --strictPort
-```
-
-작업 폴더 전체를 웹 업로드하거나 압축하지 마세요. 준비된 지도와 캐시가 로컬에는 있어도 Git에는 제외되어 있습니다. 소스 파일만 별도 압축해야 한다면 `git archive --format=zip --output=work/running-route-lab-source.zip HEAD`를 사용합니다. 이 ZIP은 Git 이력 없이 추적 파일만 담습니다.
+`npm run build`는 정적 웹 파일을 `dist/client/`에 생성합니다. 코드 라이선스는 아직 지정되지 않았으며, 데이터·의존성·기기 자산의 출처와 조건은 [출처 문서](data/ATTRIBUTION.md)에 구분했습니다.
